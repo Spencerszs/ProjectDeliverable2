@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Temperature | Home</title>
+    <link rel="stylesheet" href="./css/global.css">
+
+
+</head>
+<body>
+    <header>
+        <div id="header">
+            <div>
+                <a href="./index.html" class="logo">
+                    <h1>TEMPERATURE </h1>
+                </a>
+            </div>
+            <div class="mainNav">
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">HOME</a></li>
+                        <li><a href="./aboutme.html">ABOUT ME</a></li>
+                        <li><a href="./temperature.html">TEMPERATURE</a></li>
+                        <li><a href="./weather.html">WEATHER</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        
+      <h1 class="dewpointHeading">Dew Point Temperature</h1>
+      
+      <section class="temperatureBox">
+          <div class="inputBox">
+                <label>
+                    Temperature In Fahrenheit
+                </label>
+                <input type="text" id="inputF" value=""/>
+                <span class="errorCheck"></span>
+          </div>
+
+          <div class="inputBox">
+            <label> 
+                Relative Humidity 
+            </label>
+            <input type="text" id="inputRH" value=""/>
+            <span class="errorCheck"></span>
+
+          </div>
+          
+
+          <div class="inputBox">
+            <label>
+                Temperature In Degrees Celsius
+            </label>
+            <h3 id="outputTempDC"></h3>
+          </div>
+
+          <div class="inputBox">
+            <label>
+                Temperature In Dew Point
+            </label>
+            <h3 id="outputTempDP"></h3>
+          </div>
+          
+
+          <div>
+              <button id="calBtn">CALCULATE</button>
+          </div>
+      </section>
+    
+    </main>
+
+
+    <!-- footer of our website -->
+    <footer>
+        <p class="footerText">All Right Reserved © 2022</p>
+    </footer>
+    <script src="./scripts/validation.js"></script>
+    <script src="./scripts/app.js"></script>
+</body>
+</html>
